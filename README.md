@@ -14,15 +14,15 @@
 
 - 5 branchs:
 
-+ Master: Contains stable code that has been released, only receives merges from release/* or hotfix/* branches.
+   - Master: Contains stable code that has been released, only receives merges from release/* or hotfix/* branches.
 
-+ Develop: Used for new feature development. All feature/* and hotfix/* branches are merged here once complete, when preparing for a release, a release/* branch is created from this.
+   - Develop: Used for new feature development. All feature/* and hotfix/* branches are merged here once complete, when preparing for a release, a release/* branch is created from this.
 
-+ Feature/*: Each feature/xxx branch is for developing a single new feature. Created from develop, and merged back into develop when done.
+   - Feature/*: Each feature/xxx branch is for developing a single new feature. Created from develop, and merged back into develop when done.
 
-+ Release/*: Created from develop when preparing for a new release version. Used for final testing, minor bug fixes, updating version numbers and changelogs. After release, merged into both main and develop.
+   - Release/*: Created from develop when preparing for a new release version. Used for final testing, minor bug fixes, updating version numbers and changelogs. After release, merged into both main and develop.
 
-+ Hotfixes/*: Created directly from main to fix urgent issues in production. After fixing, merged back into both main and develop.
+   - Hotfixes/*: Created directly from main to fix urgent issues in production. After fixing, merged back into both main and develop.
 
 - Gitflow workflow
   
